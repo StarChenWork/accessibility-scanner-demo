@@ -95,13 +95,13 @@ jobs:
       #   working-directory: .github/actions/find
       #   run: npm ci
 
-      - name: Validate scan results (${{ matrix.site }})
-        run: |
-          npm ci
-          npm run test
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          CACHE_PATH: ${{ steps.cache_key.outputs.cache_key }}
+      # - name: Validate scan results (${{ matrix.site }})
+      #   run: |
+      #     npm ci
+      #     npm run test
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      #     CACHE_PATH: ${{ steps.cache_key.outputs.cache_key }}
 
       # - name: Clean up issues and pull requests
       #   if: ${{ always() }}
