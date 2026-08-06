@@ -1,0 +1,15 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+.site-footer .footer-col-wrapper,
+.site-footer .footer-col-wrapper a,
+.site-footer .social-media-list .username {
+  color: #666666;
+}
+
+.site-footer .svg-icon {
+  fill: #666666;
+}
