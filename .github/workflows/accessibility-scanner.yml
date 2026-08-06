@@ -88,21 +88,6 @@ jobs:
           path: ${{ steps.cache_key.outputs.cache_key }}
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # # - if we need to do the same to file/fix in the future
-      # #   we can add separate steps
-      # - name: Install 'find' dependencies
-      #   shell: bash
-      #   working-directory: .github/actions/find
-      #   run: npm ci
-
-      # - name: Validate scan results (${{ matrix.site }})
-      #   run: |
-      #     npm ci
-      #     npm run test
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      #     CACHE_PATH: ${{ steps.cache_key.outputs.cache_key }}
-
       # - name: Clean up issues and pull requests
       #   if: ${{ always() }}
       #   shell: bash
@@ -136,9 +121,9 @@ jobs:
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name: Clean up cached results
-        if: ${{ always() }}
-        uses: ./.github/actions/gh-cache/delete
-        with:
-          path: ${{ steps.cache_key.outputs.cache_key }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Clean up cached results
+      #   if: ${{ always() }}
+      #   uses: ./.github/actions/gh-cache/delete
+      #   with:
+      #     path: ${{ steps.cache_key.outputs.cache_key }}
+      #     token: ${{ secrets.GITHUB_TOKEN }}
