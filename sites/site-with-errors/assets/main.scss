@@ -1,0 +1,21 @@
+---
+---
+
+@import "minima";
+
+.site-footer .footer-col-wrapper,
+.site-footer .footer-col-wrapper a {
+  color: #6b6b6b;
+}
+
+.site-footer .svg-icon {
+  fill: #6b6b6b;
+}
+
+.site-footer .footer-col-wrapper a:hover {
+  color: #111;
+}
+
+.site-footer .footer-col-wrapper a:hover .svg-icon {
+  fill: #111;
+}
