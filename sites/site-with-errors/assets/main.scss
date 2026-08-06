@@ -1,0 +1,26 @@
+---
+---
+@charset "utf-8";
+
+$brand-color: #2772d2;
+$grey-color: #727272;
+
+@import "minima";
+
+.highlight {
+  .nb {
+    color: #007da7;
+  }
+
+  .c,
+  .cm,
+  .cp,
+  .c1,
+  .cs,
+  .gh,
+  .go,
+  .gu,
+  .bp {
+    color: $grey-color;
+  }
+}
