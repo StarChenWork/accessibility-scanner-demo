@@ -1,0 +1,22 @@
+---
+---
+
+$brand-color: #005a9c;
+$grey-color: #595959;
+
+@import "minima";
+
+.highlight {
+  .c1 {
+    color: #6b5f52;
+  }
+
+  .nb {
+    color: #005a9c;
+  }
+
+  .s1,
+  .s2 {
+    color: #a31515;
+  }
+}
