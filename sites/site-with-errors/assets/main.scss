@@ -1,0 +1,15 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+$muted-accessible-color: #6e6e6e;
+
+.post-meta,
+.rss-subscribe,
+.rss-subscribe a,
+.footer-col-wrapper,
+.footer-col-wrapper a {
+  color: $muted-accessible-color;
+}
