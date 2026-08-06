@@ -47,6 +47,13 @@ jobs:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
 
+      - name: Verify 404 heading is not empty (${{ matrix.site }})
+        shell: bash
+        working-directory: ${{ matrix.site }}
+        run: |
+          set -euo pipefail
+          grep -Eq '<h1[^>]*class="post-title"[^>]*>[^<[:space:]][^<]*</h1>' _site/404.html
+
       - name: Start Puma (${{ matrix.site }})
         shell: bash
         working-directory: ${{ matrix.site }}
